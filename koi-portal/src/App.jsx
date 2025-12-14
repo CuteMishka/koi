@@ -8,7 +8,8 @@ import Home from './pages/Home';
 import Auth from './pages/Auth';
 import Dashboard from './pages/Dashboard';
 import Article from './pages/Article';
-import Videos from './pages/Videos'; // 1. Импорт
+import Videos from './pages/Videos';
+import Events from './pages/Events'; // 1. Импорт
 import PageTransition from './components/PageTransition';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -27,7 +28,8 @@ export default function App() {
           <Route path="/auth" element={<PageTransition><Auth /></PageTransition>} />
           <Route path="/dashboard" element={<PageTransition><Dashboard /></PageTransition>} />
           <Route path="/news/:id" element={<PageTransition><Article /></PageTransition>} />
-          <Route path="/videos" element={<PageTransition><Videos /></PageTransition>} /> {/* 2. Маршрут */}
+          <Route path="/videos" element={<PageTransition><Videos /></PageTransition>} />
+          <Route path="/events" element={<PageTransition><Events /></PageTransition>} /> {/* 2. Маршрут */}
         </Routes>
       </AnimatePresence>
 
