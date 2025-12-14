@@ -1,0 +1,26 @@
+/* Подключаем Inter (текст) и Montserrat (заголовки) с полной поддержкой кириллицы */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&subset=cyrillic,cyrillic-ext,latin&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Применяем новый шрифт для заголовков */
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.glass-card {
+  @apply bg-white rounded-2xl shadow-xl border border-slate-100;
+}
+
+/* Скроллбар */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #64748b; }
